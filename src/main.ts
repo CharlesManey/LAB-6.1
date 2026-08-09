@@ -21,14 +21,18 @@ productInventory.push(preOrderGta, digitalGame, boots, mouse);
 for (const product of productInventory) {
   console.log(product.displayDetails(), `, Final Price with tax: $${calculateTax(product)}`);
 }
+
 // Using sort functions to sort by price and name
 const sortedByPriceAsc = sortByPrice(productInventory, 'ascending');
 const sortedByPriceDes = sortByPrice(productInventory, 'descending');
 const sortedByNameAsc = sortByName(productInventory, 'ascending');
 const sortedByNameDes = sortByName(productInventory, 'descending');
+
 // Logging the sorted Inventory
 console.log('Sorted by price Ascending', sortedByPriceAsc);
 console.log('Sorted by price Descending', sortedByPriceDes);
+console.log('Sorted by name Ascending', sortedByNameAsc);
+console.log('Sorted by name Descending', sortedByNameDes);
 
 // Let's build an inventory tracker using Vanilla JS!!
 
