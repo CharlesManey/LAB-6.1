@@ -1,4 +1,4 @@
-// Import all of our model files and utility file
+// Import all of our model files and utility files
 import Product from "./models/Product";
 import { PhysicalProduct } from "./models/PhysicalProduct";
 import { DigitalProduct } from "./models/DigitalProduct";
@@ -21,11 +21,14 @@ productInventory.push(preOrderGta, digitalGame, boots, mouse);
 for (const product of productInventory) {
   console.log(product.displayDetails(), `, Final Price with tax: $${calculateTax(product)}`);
 }
-
+// Using sort functions to sort by price and name
 const sortedByPriceAsc = sortByPrice(productInventory, 'ascending');
 const sortedByPriceDes = sortByPrice(productInventory, 'descending');
 const sortedByNameAsc = sortByName(productInventory, 'ascending');
 const sortedByNameDes = sortByName(productInventory, 'descending');
-
+// Logging the sorted Inventory
 console.log('Sorted by price Ascending', sortedByPriceAsc);
 console.log('Sorted by price Descending', sortedByPriceDes);
+
+// Let's build an inventory tracker using Vanilla JS!!
+

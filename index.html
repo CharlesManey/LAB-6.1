@@ -7,9 +7,49 @@
     <link rel="stylesheet" href="./src/style.css">
     <title>LAB 6.1 Inventory Tracker</title>
   </head>
-  <body>
-    <h1 class="text-5xl text-center">Inventory Tracker</h1>
+  <body class="p-5">
+    <h1 class="text-6xl text-center font-semibold pb-10">Inventory Tracker</h1>
+    <main id="main-container" class="flex justify-around">
+      <div id="form-container" class="flex-col justify-start p-3 border-black border-2 rounded-md w-5/12">
+        <h1 class="font-semibold text-5xl justify-self-center pb-3">PRODUCT ENTRY</h1>
+        <form id="product-form" class="flex flex-col gap-4 p-3">
+          <div class="form-group">
+            <label for="" class="font-bold">Product Type:</label>
+            <select id="product-type" class="border-2 border-black rounded-md p-0.5 w-25">
+              <option value=""></option>
+              <option value="Physical">Physical</option>
+              <option value="Digital">Digital</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-bold">Product Name:</label>
+            <input type="text" name="" id="productNameInput" class="border-2 border-black rounded-md p-0.5" placeholder="Enter Name" required>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-bold">Product Price:</label>
+            <input type="number" name="" id="productPriceInput" class="border-2 border-black rounded-md p-0.5" placeholder="Enter Price" required>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-bold">Product SKU:</label>
+            <input type="text" name="" id="productSkuInput" class="border-2 border-black rounded-md p-0.5" placeholder="Enter SKU" required>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-bold">Product Weight:</label>
+            <input type="text" name="" id="productWeightInput" class="border-2 border-black rounded-md p-0.5" placeholder="Enter Lbs" required>
+          </div>
+          <div class="form-group">
+            <label for="" class="font-bold">File Size:</label>
+            <input type="text" name="" id="productFileSizeInput" class="border-2 border-black rounded-md p-0.5" placeholder="Enter GB" required>
+          </div>
+        </form>
+        <div id="addProductBtn" class="justify-self-center">
+        <button type="submit" class="border-2 border-black rounded-md p-0.5 w-50 font-bold">Add Product</button>
+        </div>
+      </div>
+      <div id="inventory-container" class="flex-col justify-start p-3 border-black border-2 rounded-md w-5/12">
+
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
-    <!-- <script type="module" src="/src/models/DigitalProduct.ts"></script> -->
   </body>
 </html>
